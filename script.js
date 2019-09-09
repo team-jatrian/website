@@ -37,7 +37,10 @@ tl.to('.nav-bar', 0.5, {
     }, '-=0.5')
     .to('.hamburger', 0.1, {
         zIndex: 4
-    });
+    })
+    .to('.down-arrow', 0.25, {
+        className: '+=vanish'
+    }, '-=0.75');
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
