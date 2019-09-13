@@ -29,7 +29,7 @@ html {
 .widther h1 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    color: #d1a33f;
+    color: #8C0F0F;
 }
 
 .nav-list {
@@ -95,7 +95,7 @@ html {
 }
 
 .welcome-text span {
-    color: #d1a33f;
+    color: #2A8C82;
 }
 
 .welcome-text.vanish {
@@ -184,17 +184,61 @@ main {
     background: grey;
 }
 
-.team {
+.summery {
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+.background {
     height: 100vh;
-    background: lightblue;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 80vh;
+    width: 90%;
+    color: white;
+    margin: auto;
+    background: #182940;
+}
+
+.texts {
+    width: 90%;
+    margin: auto;
+}
+
+.team h1 {
+    font-size: 40px;
+}
+
+.team p {
+    font-size: 18px;
 }
 
 .roboter {
-    height: 100vh;
-    background: lightcoral;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    background: #182940;
 }
 
 .kontakt {
-    height: 100vh;
-    background: lightgreen;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    background: #182940;
 }
