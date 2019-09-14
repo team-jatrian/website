@@ -52,7 +52,6 @@ html {
 }
 
 .introduction {
-    z-index: 2;
     position: relative;
     width: 98%;
     margin: auto;
@@ -99,6 +98,7 @@ html {
 }
 
 .welcome-text.vanish {
+    pointer-events: none;
     opacity: 0;
 }
 
@@ -114,7 +114,7 @@ html {
 .nav-links {
     position: absolute;
     top: 0%;
-    z-index: -1;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     background: black;
@@ -147,7 +147,7 @@ html {
 }
 
 .down-arrow {
-    z-index: 2;
+    z-index: 0;
     position: absolute;
     bottom: 10%;
     right: 45%;
@@ -161,6 +161,7 @@ html {
 }
 
 .down-arrow.vanish {
+    pointer-events: none;
     opacity: 0;
 }
 
