@@ -3,6 +3,17 @@ const logo = document.querySelector('.logo');
 const hamburger = document.querySelector('.hamburger');
 const arrow = document.querySelector('.down-arrow');
 const navLinks = document.querySelector('.nav-links');
+const stylesheet = document.querySelector('.stylesheet');
+const scripts = document.querySelector('.scripts');
+
+var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+var isEdge = !isIE && !!window.StyleMedia
+if (isEdge) {
+    stylesheet.setAttribute('href', 'style-edge.css');
+    scripts.outerHTML = "";
+}
+
+
 let counter = 0;
 let forewards = true;
 
