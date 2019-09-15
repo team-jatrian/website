@@ -138,6 +138,8 @@ html {
 }
 
 .nav-link {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     text-decoration: none;
 }
