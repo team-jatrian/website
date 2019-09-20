@@ -6,11 +6,9 @@ const navLinks = document.querySelector('.nav-links');
 const stylesheet = document.querySelector('.stylesheet');
 const scripts = document.querySelector('.scripts');
 
-var isIE = /*@cc_on!@*/ false || !!document.documentMode;
-var isEdge = !isIE && !!window.StyleMedia
-if (isEdge) {
-    stylesheet.setAttribute('href', 'style-edge.css');
-    scripts.outerHTML = "";
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (isChrome) {
+    stylesheet.setAttribute('href', 'style-alternative.css');
 }
 
 
