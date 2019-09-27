@@ -67,6 +67,14 @@ html {
     font-weight: 500;
     text-decoration: none;
     color: #2A8C82;
+    border: 2px #2A8C82 solid;
+    padding: 5px;
+    transition: all .4s ease;
+}
+
+.nav-links li a:hover{
+    color: white;
+    background: #2A8C82;
 }
 
 main {

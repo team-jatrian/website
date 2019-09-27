@@ -1,16 +1,20 @@
-const welcomeText = document.querySelector('.welcome-text');
+const stylesheet = document.querySelector('.stylesheet');
+const mainScript = document.querySelector('.main-script');
+
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if (isChrome) {
+    stylesheet.setAttribute('href', 'style-alternative.css');
+    onlyOnChrome();
+}
+
+function onlyOnChrome() {
+    const welcomeText = document.querySelector('.welcome-text');
 const logo = document.querySelector('.logo');
 const hamburger = document.querySelector('.hamburger');
 const arrow = document.querySelector('.down-arrow');
 const navLinks = document.querySelector('.nav-links');
 const stylesheet = document.querySelector('.stylesheet');
 const scripts = document.querySelector('.scripts');
-
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-if (isChrome) {
-    stylesheet.setAttribute('href', 'style-alternative.css');
-}
-
 
 let counter = 0;
 let forewards = true;
@@ -58,3 +62,4 @@ var scene = new ScrollMagic.Scene({
     .addTo(controller)
     .setTween(tl)
     .triggerHook(0);
+}
