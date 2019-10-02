@@ -259,13 +259,14 @@ a {
 }
 
 .sponsoring-logos {
+    font-family: 'Montserrat', sans-serif;
     align-self: center;
     justify-self: center;
     height: 100%;
 }
 
 .sponsoring-logos img {
-    height: 100%;
+    height: 70%;
 }
 
 @media screen and (max-width: 1070px) {
