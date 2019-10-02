@@ -259,9 +259,9 @@ a {
 }
 
 .sponsoring-logos {
+
+    transform: translateX(47%);
     font-family: 'Montserrat', sans-serif;
-    align-self: center;
-    justify-self: center;
     height: 100%;
 }
 
