@@ -45,20 +45,22 @@ html {
 .introduction {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 90% 1fr;
-    grid-template-columns: 1fr 90% 1fr;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 5% 90% 5%;
     justify-items: center;
 }
 
 .nav-links {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     transform: translateY(-30vh);
 }
 
 .nav-links li {
+    align-self: center;
+    justify-self: center;
     list-style: none;
 }
 
@@ -72,7 +74,7 @@ html {
     transition: all .4s ease;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: white;
     background: #2A8C82;
 }
@@ -143,4 +145,12 @@ main {
 
 a {
     color: white;
+}
+
+.sponsoring-logos{
+    position: absolute;
+    left: 46%;
+}
+.sponsoring-logos img{
+    width: 20%;
 }

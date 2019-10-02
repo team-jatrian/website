@@ -59,6 +59,7 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    bottom: 10vh;
 }
 
 .logo img {
@@ -250,31 +251,43 @@ a {
     color: white;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsoring-logos {
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+}
+
+.sponsoring-logos img {
+    height: 100%;
+}
+
 @media screen and (max-width: 1070px) {
     html {
         scroll-behavior: smooth;
     }
-    
     .logo {
         grid-column: 2/3;
         grid-row: 2/3;
         margin: 0%;
         text-align: center;
     }
-    
     .logo img {
         width: 20%;
         margin: 0%;
     }
-    
     .hamburger {
         display: none;
     }
-    
     .down-arrow {
         display: none;
     }
-    
     .welcome-text {
         padding-bottom: 2%;
         text-align: center;
@@ -282,11 +295,9 @@ a {
         align-self: end;
         font-size: 20px;
     }
-    
     .welcome-text span {
         color: #2A8C82;
     }
-    
     .introduction {
         height: 100vh;
         display: grid;
@@ -294,7 +305,6 @@ a {
         grid-template-columns: 1fr 90% 1fr;
         justify-items: center;
     }
-    
     .nav-links {
         display: flex;
         flex-direction: row;
@@ -302,36 +312,30 @@ a {
         justify-content: space-around;
         transform: translateY(-30vh);
     }
-    
     .nav-links li {
         list-style: none;
     }
-    
     .nav-links li a {
         font-size: 19px;
         font-weight: 500;
         text-decoration: none;
         color: #2A8C82;
     }
-    
     main {
         height: 300vh;
         background: grey;
     }
-    
     .summery {
         font-family: 'Montserrat', sans-serif;
         width: 90%;
         margin: auto;
     }
-    
     .background {
         height: 100vh;
         display: flex;
         align-items: center;
         background: white;
     }
-    
     .team {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -342,20 +346,16 @@ a {
         margin: auto;
         background: #182940;
     }
-    
     .texts {
         width: 90%;
         margin: auto;
     }
-    
     .team h1 {
         font-size: 40px;
     }
-    
     .team p {
         font-size: 18px;
     }
-    
     .roboter {
         color: white;
         display: grid;
@@ -366,7 +366,6 @@ a {
         margin: auto;
         background: #182940;
     }
-    
     .sponsoring {
         color: white;
         display: grid;
@@ -377,7 +376,6 @@ a {
         margin: auto;
         background: #182940;
     }
-    
     a {
         color: white;
     }
@@ -387,4 +385,4 @@ a {
         box-sizing: border-box;
         font-family: "Montserrat", sans-serif;
     }
-  }
+}
