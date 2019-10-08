@@ -8,13 +8,15 @@ if (isChrome) {
 }
 
 function onlyOnChrome() {
-    const welcomeText = document.querySelector('.welcome-text');
+const welcomeText = document.querySelector('.welcome-text');
 const logo = document.querySelector('.logo');
 const hamburger = document.querySelector('.hamburger');
 const arrow = document.querySelector('.down-arrow');
 const navLinks = document.querySelector('.nav-links');
 const stylesheet = document.querySelector('.stylesheet');
 const scripts = document.querySelector('.scripts');
+const cirpLogo = document.querySelector('.cirp-logo');
+
 
 let counter = 0;
 let forewards = true;
@@ -24,13 +26,21 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     hamburger.classList.toggle('open');
     if ((counter % 2) == 1) {
+        cirpLogo.classList.add('vanish');
+        cirpLogo.classList.remove('appear');
+
         welcomeText.classList.add('vanish');
         welcomeText.classList.remove('appear');
+
         arrow.classList.add('vanish');
         arrow.classList.remove('appear');
     } else {
+        cirpLogo.classList.add('appear');
+        cirpLogo.classList.remove('vanish');
+
         welcomeText.classList.add('appear');
         welcomeText.classList.remove('vanish');
+
         arrow.classList.add('appear');
         arrow.classList.remove('vanish');
     }
@@ -53,7 +63,10 @@ tl.to('.nav-bar', 0.5, {
     })
     .to('.down-arrow', 0.25, {
         className: '+=vanish'
-    }, '-=0.75');
+    }, '-=0.75')
+    .to('.cirp-logo', 0.25, {
+        className: '+=vanish'
+    },'-=0.5');
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({

@@ -146,11 +146,10 @@ main {
 a {
     color: white;
 }
-
-.sponsoring-logos{
-    position: absolute;
-    left: 46%;
-}
 .sponsoring-logos img{
-    width: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    width: 10%;
 }

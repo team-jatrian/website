@@ -59,7 +59,6 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    bottom: 10vh;
 }
 
 .logo img {
@@ -251,24 +250,38 @@ a {
     color: white;
 }
 
-.wrapper {
+
+/*.wrapper {
     display: grid;
     grid-template-rows: 10vh 90vh;
     align-items: center;
     justify-content: center;
 }
+*/
 
 .sponsoring-logos {
-
-    transform: translateX(47%);
+    margin: 0;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
     height: 100%;
 }
 
 .sponsoring-logos img {
-    height: 70%;
+    height: 10%;
+    transition: all .5s ease-out;
 }
 
+.sponsoring-logos img.vanish{
+    opacity: 0;
+}
+
+.sponsoring-logoa img.appear{
+    transition-delay: 0.5s;
+    opacity: 1;
+}
 @media screen and (max-width: 1070px) {
     html {
         scroll-behavior: smooth;
