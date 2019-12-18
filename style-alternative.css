@@ -47,10 +47,6 @@ html {
     text-decoration: none;
 }
 
-.logo img {
-    height: 10vh;
-}
-
 .introduction {
     position: relative;
     width: 98%;
@@ -62,7 +58,7 @@ html {
 }
 
 .logo img {
-    height: 10vh;
+    height: 12vh;
 }
 
 .hamburger {
@@ -232,7 +228,10 @@ main {
     height: 80vh;
     width: 90%;
     margin: auto;
-    background: #182940;
+    background: /* top, transparent black, faked with gradient */
+    linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */
+    url("./img/arduino-photo.jpg");
+    background-size: 100%;
 }
 
 .sponsoring {
@@ -262,7 +261,6 @@ a {
 .sponsoring-logos {
     margin: 0;
     position: absolute;
-    top: 3%;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
@@ -271,17 +269,8 @@ a {
 
 .sponsoring-logos img {
     height: 10%;
-    transition: all .5s ease-out;
 }
 
-.sponsoring-logos img.vanish{
-    opacity: 0;
-}
-
-.sponsoring-logoa img.appear{
-    transition-delay: 0.5s;
-    opacity: 1;
-}
 @media screen and (max-width: 1070px) {
     html {
         scroll-behavior: smooth;

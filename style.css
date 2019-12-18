@@ -129,7 +129,7 @@ main {
     height: 80vh;
     width: 90%;
     margin: auto;
-    background: #182940;
+    background-image: url("./img/Roboter-Bild.jpg");
 }
 
 .sponsoring {
@@ -146,10 +146,11 @@ main {
 a {
     color: white;
 }
-.sponsoring-logos img{
+
+.sponsoring-logos{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 3%;
-    width: 10%;
+    left: 46%;
+}
+.sponsoring-logos img{
+    width: 20%;
 }
