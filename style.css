@@ -18,7 +18,7 @@ html {
 }
 
 .logo img {
-    width: 20%;
+    width: 10em;
     margin: 0%;
 }
 
@@ -129,7 +129,10 @@ main {
     height: 80vh;
     width: 90%;
     margin: auto;
-    background-image: url("./img/Roboter-Bild.jpg");
+    background: /* top, transparent black, faked with gradient */
+    linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */
+    url("./img/arduino-photo.jpg");
+    background-size: 100%;
 }
 
 .sponsoring {
@@ -147,10 +150,11 @@ a {
     color: white;
 }
 
-.sponsoring-logos{
+.sponsoring-logos {
     position: absolute;
     left: 46%;
 }
-.sponsoring-logos img{
+
+.sponsoring-logos img {
     width: 20%;
 }
